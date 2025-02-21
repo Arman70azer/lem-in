@@ -1,61 +1,19 @@
-# Trucs important à faire !!!
+# Lem-in
 
-- Pensez à créer le lien qui lies les salles intermediaire, de départ et de fin. Pour cela utilisé les func 
-contenu dans "IA".
+**Lem-in**, it simulates a system for managing an ant colony, where the goal is to find the best path for ants to move from point A to point B in a list representing rooms and tunnels.
 
--Trier les listes de chemins pour avoir une liste avec 
+The project is written in **Go** (Golang).
 
-je veux que tu me trie cette liste :
+## Prerequisites
 
-L1-3 L2-2 L3-1 L4-3 L5-1 
-L1-4 L2-5 L3-4 L4-6 L5-2
-L2-6 L4-7 L5-6
-L2-7 L5-8
+Before you begin, ensure you have the following installed on your machine:
 
-Pour qu'elle s'affiche de cette manière:
+- **Go** (version 1.18 or higher)  
+  You can check if Go is installed by running:
+  ```bash
+  go version
 
-L1-3 L2-2
-L1-4 L2-5 L3-3 L4-3
-L2-6 L3-4 L4-6 L5-2
-L2-7 L4-7 L5-6
-L5-6
-L5-8
+## Usage
 
-Maintenant que j'ai ca : 
-
-L1-3 L1-4
-L2-2 L2-5 L2-6 L2-7
-L3-1 L3-4
-L4-3 L4-6 L4-7
-L5-1 L5-2 L5-6 L5-8
-
-j'aimerias ca : 
-
-L1-3 L2-2
-L1-4 L2-5 L3-3 L4-3
-L2-6 L3-4 L4-6 L5-2
-L2-7 L4-7 L5-6
-L5-6
-L5-8
-
-
-j'aimerais que mes étapes ce stocke de cette manière : 
-
-L1-3
-L1-4
-
-puis,
-
-L1-3 L2-2
-L1-4 L2-5
-L2-6
-L2-7
-
-puis,
-
-L1-3 L2-2 
-L1-4 L2-5 L3-3
-L2-6 L3-4
-L2-7
-
-ect...
+```
+go run .
